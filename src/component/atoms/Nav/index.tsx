@@ -2,14 +2,13 @@ import { motion } from "framer-motion"
 import Style from "./Nav.module.scss"
 import Link from "next/link"
 import { useRouter } from "next/router"
-import { useState } from "react"
 
 interface NavProps {
   open: boolean
-  setOpen: (value: boolean) => void
+  setOpen?: (value: boolean) => void
 }
 
-const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
+const Nav: React.FC<NavProps> = ({ open }) => {
   const { pathname } = useRouter()
   const nav = ["/", "/parceiros", "/times", "/seguimentos", "/projetos"]
 
