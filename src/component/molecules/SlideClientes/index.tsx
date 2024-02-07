@@ -7,6 +7,10 @@ import { Pagination, Navigation, HashNavigation } from 'swiper/modules';
 import Style from "./SlideClientes.module.scss"
 import { Title } from "../../atoms"
 
+import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
+
 const SlideClientes = () => {
   const logo = [
     "apas.png",
